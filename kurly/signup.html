@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./signup.css" />
+  </head>
+  <body>
+    <head> </head>
+    <div class="wrap">
+      <div class="allall">
+        <div class="signup">
+          <h1>회원가입</h1>
+        </div>
+        <div class="middle">
+          <div class="must"><span class="stars">*</span>필수입력사항</div>
+          <div class="ditails">
+            <ul>
+              <li>
+                <label for="userid">아이디<span class="stars">*</span></label>
+                <input
+                  id="userid"
+                  name="userid"
+                  type="text"
+                  minlength="6"
+                  maxlength="16"
+                  required
+                  autofocus
+                  placeholder="아이디를 입력해주세요"
+                />
+                <button>중복확인</button>
+                <!-- <span>6자 이상 16자 이하의 영문 혹은 영문과 숫자를 조합</span>
+                <span>사용 할 수 있는 아이디 입니다</span>
+                <span>사용 불가능한 아이디 입니다</span> -->
+              </li>
+              <li>
+                <label for="pwd1">비밀번호<span class="stars">*</span></label>
+                <input
+                  id="pwd1"
+                  name="pwd1"
+                  type="text"
+                  required
+                  autofocus
+                  placeholder="비밀번호를 입력해주세요"
+                />
+              </li>
+              <li>
+                <label for="pwd2"
+                  >비밀번호확인<span class="stars">*</span></label
+                >
+                <input
+                  id="pwd2"
+                  name="pwd2"
+                  type="text"
+                  required
+                  autofocus
+                  placeholder="비밀번호를 한번 더 입력해주세요"
+                />
+              </li>
+              <li>
+                <label for="username">이름<span class="stars">*</span></label>
+                <input
+                  id="username"
+                  name="username"
+                  type="text"
+                  required
+                  autofocus
+                  placeholder="이름을 입력해주세요"
+                />
+              </li>
+              <li>
+                <label for="email">이메일<span class="stars">*</span></label>
+                <input
+                  id="email"
+                  name="email"
+                  type="text"
+                  required
+                  autofocus
+                  placeholder="예: cat@good.com"
+                />
+                <button>중복확인</button>
+                <!-- <span>이메일을 입력해 주세요</span>
+                <span>사용 가능한 이메일 입니다</span>
+                <span>사용 불가능한 이메일 입니다</span>
+                <span>이메일 형식으로 입력해 주세요</span> -->
+              </li>
+              <li>
+                <label for="tel">휴대폰<span class="stars">*</span></label>
+                <input
+                  id="tel"
+                  name="tel"
+                  type="text"
+                  maxlength="13"
+                  required
+                  autofocus
+                  placeholder="숫자만 입력해주세요"
+                />
+              </li>
+              <li>
+                <label for="loca">주소<span class="stars">*</span></label>
+                <button id="address">주소 검색</button>
+                <p id="loc_p1">배송지에 따라 상품 정보가 달라질 수 있습니다.</p>
+              </li>
+              <li class="gender_all">
+                <label for="gender">성별</label>
+                <input type="radio" id="male" /><label for="male">남자</label>
+                <input type="radio" id="female" /><label for="female"
+                  >여자</label
+                >
+                <input type="radio" id="keepsecret" checked="checked" /><label
+                  for="keepsecret"
+                  >선택안함</label
+                >
+              </li>
+              <li>
+                <label for="day">생년월일</label>
+                <input
+                  type="text"
+                  id="yaer"
+                  maxlength="4"
+                  placeholder="YYYY / MM / DD "
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="half_part">
+            <div>
+              <div class="terms">
+                <label for="terms">이용약관동의</label
+                ><span class="stars">*</span>
+              </div>
+              <div class="use_terms">
+                <ul>
+                  <li>
+                    <input type="radio" id="use_agree1" /><label
+                      for="use_agree1"
+                      >전체 동의합니다.</label
+                    >
+                    <div>
+                      <p id="use_p1">
+                        선택항목에 동의하지 않은 경우도 회원가입 및 일반적인
+                        서비스를 이용할 수 있습니다.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <input type="radio" id="use_agree2" /><label
+                      for="use_agree2"
+                      >이용약관 동의 <span>(필수)</span></label
+                    >
+                    <button id="btn_see1">약관보기></button>
+                  </li>
+                  <li>
+                    <input type="radio" id="use_agree3" /><label
+                      for="use_agree3"
+                      >이용약관 동의 <span>(필수)</span></label
+                    >
+                    <button id="btn_see2">약관보기></button>
+                  </li>
+                  <li>
+                    <input type="radio" id="use_agree4" /><label
+                      for="use_agree4"
+                      >이용약관 동의 <span>(선택)</span></label
+                    >
+                    <button id="btn_see3">약관보기></button>
+                  </li>
+                  <li>
+                    <input type="radio" id="free_delivrey" /><label
+                      for="free_delivrey"
+                      >이용약관 동의 <span>(선택)</span></label
+                    >
+                    <div>
+                      <input type="radio" id="sele1" /><label for="sele1"
+                        >SMS</label
+                      >
+                      <input type="radio" id="sele2" /><label for="sele2"
+                        >이메일</label
+                      >
+                      <p id="use_p2">
+                        동의 시 한 달간 [5%적립] + [2만원 이상 무료배송] 첫 주문
+                        후 안내
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <input type="radio" id="use_agree5" /><label
+                      for="use_agree5"
+                      >이용약관 동의 <span>(필수)</span></label
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="sign_over">
+            <button type="submit" id="f_btn">가입하기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer></footer>
+  </body>
+</html>

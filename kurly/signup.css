@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Noto Sans", "malgun gothic", AppleGothic, dotum, sans-serif;
+  line-height: 3;
+}
+
+/* *색깔 */
+.stars {
+  color: red;
+}
+
+head {
+  display: none;
+}
+
+body {
+  display: block;
+  background: white;
+  padding: 20px;
+}
+
+.wrap {
+  background: white;
+  width: 640px;
+  margin: 0 auto;
+}
+
+.allall {
+  background: white;
+  padding: 20px;
+  width: 640px;
+}
+
+.signup {
+  margin-bottom: 50px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.must {
+  border-bottom: 2px solid black;
+  padding-bottom: 20pxpx;
+  text-align: right;
+}
+
+/* .ditails {
+  border-bottom: 1px solid black;
+} */
+
+/* ul */
+ul li {
+  list-style: none;
+}
+
+.ditails label {
+  margin-top: 20px;
+  float: left;
+  font-size: 14px;
+  width: 130px;
+  line-height: 20px;
+}
+
+/* .ditails input {
+  margin-top: 20px;
+  width: 350px;
+  height: 46px;
+} */
+
+#userid,
+#pwd1,
+#pwd2,
+#username,
+#email,
+#tel,
+#yaer,
+#address,
+#loc_p1 {
+  margin-top: 10px;
+  width: 350px;
+  height: 40px;
+}
+
+#address {
+  border-color: aqua;
+  background: white;
+}
+
+#loc_p1 {
+  display: block;
+  margin: 0 auto;
+}
+
+button {
+  border-color: aqua;
+  background: white;
+  margin-top: 10px;
+  width: 100px;
+  height: 40px;
+}
+
+.half_part {
+  border-top: 1px solid black;
+  margin-top: 40px;
+  height: 350px;
+}
+
+.terms {
+  width: 130px;
+  height: 350px;
+  display: block;
+  text-align: left;
+  float: left;
+  margin-top: -15px;
+}
+
+.use_terms {
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  line-height: 20px;
+}
+
+#use_p1,
+#use_p2 {
+  font-size: 12px;
+}
+
+#btn_see1,
+#btn_see2,
+#btn_see3 {
+  border-style: none;
+  text-align: right;
+}
+
+.sign_over {
+  width: 640px;
+  padding: 30px 0;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+#f_btn {
+  width: 240px;
+  padding: 0 10px;
+  border-radius: 4px;
+  height: 56px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.gender_all {
+  margin-top: 20px;
+  display: flex;
+}
