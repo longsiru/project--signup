@@ -1,0 +1,287 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Noto Sans", "malgun gothic", AppleGothic, dotum, sans-serif;
+  line-height: 1.15;
+}
+
+div {
+  display: block;
+}
+
+/* ul */
+ul li {
+  list-style: none;
+}
+
+body {
+  display: block;
+  background: white;
+  padding: 0px;
+  font-size: 14px;
+  height: 100%;
+}
+
+.signup {
+  min-width: 1050px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  background: white;
+}
+
+.sign-start {
+  margin-bottom: 50px;
+  font-size: 28px;
+  line-height: 35px;
+  color: black;
+  text-align: center;
+}
+
+.sign-middletop {
+  width: 640px;
+  height: 1230px;
+  margin: 0 auto;
+}
+
+.middletop-must {
+  border-bottom: 2px solid black;
+  padding-bottom: 20pxpx;
+  font-size: 12px;
+  color: rgb(59, 61, 61);
+  line-height: 17px;
+  text-align: right;
+}
+
+/* *색깔 */
+.stars {
+  color: red;
+}
+
+.middletop-list {
+  margin-top: 20px;
+  float: left;
+  font-size: 14px;
+  width: 100%;
+  line-height: 20px;
+  padding: 0;
+}
+
+li {
+  display: inline-flex;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.middletop-list-title {
+  margin-top: 10px;
+  width: 139px;
+  height: 40px;
+}
+
+.middletop-list-content {
+  flex: 1 1 0%;
+  /* margin: 0;
+  box-sizing: border-box; */
+}
+
+.list-content_deta {
+  padding-top: 0;
+}
+
+.list-content_frame {
+  width: 333px;
+  height: 48px;
+}
+
+.list-content_frame1 {
+  width: 333px;
+  height: 66px;
+}
+
+.list-content-inp {
+  width: 100%;
+  height: 46px;
+  padding: 0px 11px 1px 15px;
+}
+
+.middletop-list-btn {
+  width: 120px;
+  margin-left: 8px;
+}
+
+.list-btn {
+  border-color: aqua;
+  background: white;
+  width: 100px;
+  height: 48px;
+  border-radius: 3px;
+}
+
+.list-content-bnt {
+  display: block;
+  padding: 0px 10px;
+  text-align: center;
+  overflow: hidden;
+  width: 362px;
+  height: 46px;
+  border-radius: 4px;
+  color: aqua;
+  background-color: white;
+  border: 1px solid aqua;
+}
+
+.content-bnt-spa {
+  display: block;
+  margin-top: 10px;
+  line-height: 18px;
+  font-size: 12px;
+  color: gray;
+}
+
+.middletop-list-content-gender {
+  width: 362px;
+}
+
+.list-content_gender-fe {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.gender-fe-detai {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 12px 0px 9px;
+}
+
+.list-content_day {
+  width: 333px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 0px 15px;
+}
+
+.list-content-inp1 {
+  width: 100%;
+  height: 46px;
+  padding: 0px 11px 1px 15px;
+  line-height: 38px;
+  font-weight: 400;
+  outline: none;
+  box-sizing: border-box;
+  border: none;
+}
+
+.half_part {
+  border-top: 1px solid black;
+  margin-top: 40px;
+  height: 350px;
+  padding: 0;
+}
+
+.half_part-trem {
+  width: 100%;
+  height: 350px;
+}
+
+.terms {
+  width: 130px;
+  height: 350px;
+  display: block;
+  text-align: left;
+  float: left;
+  margin-top: 20px;
+}
+
+.use_terms {
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  line-height: 20px;
+}
+
+#use_p1,
+#use_p2 {
+  font-size: 12px;
+}
+
+#btn_see1,
+#btn_see2,
+#btn_see3 {
+  border-style: none;
+  text-align: right;
+}
+
+.sign-signover {
+  width: 640px;
+  padding: 30px 0;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+#f_btn {
+  width: 240px;
+  padding: 0 10px;
+  border-radius: 4px;
+  height: 56px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  border-color: aqua;
+}
+
+/* .sign-boundarty {
+  padding: 10px 0px;
+  border-bottom: 1px solid black;
+}
+
+.sign-halfpart {
+  padding: 0;
+}
+
+.halfpart-scope {
+  display: flex;
+  width: 100%;
+  padding: 10px 0px 10px 20px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.halfpart-use {
+  width: 139px;
+  height: 320px;
+  padding-top: 20px;
+  display: block;
+  text-align: left;
+  float: left;
+}
+
+.halfpart-use-agree {
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.halfpart-use-terms {
+  padding: 0;
+}
+
+.use-terms-detai {
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  line-height: 20px;
+  float: right;
+} */

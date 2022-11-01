@@ -161,3 +161,135 @@ button {
   margin-top: 20px;
   display: flex;
 }
+
+/* 
+<div class="sign-boundarty"></div>
+
+<div class="sign-halfpart">
+  <div class="halfpart-scope">
+    <div class="halfpart-use">
+        <label class="halfpart-use-agree" for="terms">이용약관동의</label
+        ><span class="stars">*</span>
+    </div>
+    <div class="halfpart-use-terms">
+      <div class="use-terms-detai">
+        <label for="">
+          <input
+            class=""
+            type="checkbox"
+            name="Termsall"
+            id="Termsall"
+          />
+          <img src="" alt="" />
+          <span>전체 동의합니다.</span>
+        </label>
+        <p id="use_p1">
+          선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를
+          이용할 수 있습니다.
+        </p>
+      </div>
+      <div>
+        <div>
+          <label for="">
+            <input
+              class=""
+              type="checkbox"
+              name="requ-Termsall-1"
+              id="requ-Termsall-1"
+            />
+            <img src="" alt="" />
+            <span>이용약관 동의</span>
+          </label>
+          <span>(필수)</span>
+        </div>
+        <a href="#">약관보기></a>
+      </div>
+      <div>
+        <label for="">
+            <input
+              class=""
+              type="checkbox"
+              name="requ-Termsall-3"
+              id="requ-Termsall_2"
+            />
+            <img src="" alt="" />
+            <span>개인정보 수집/이용 동의</span>
+          </label>
+          <span>(필수)</span>
+        </div>
+        <a href="#">약관보기></a>
+      </div>
+      <div>
+        <label for="">
+            <input
+              class=""
+              type="checkbox"
+              name="requ-Termsall-3"
+              id="requ-Termsall-3"
+            />
+            <img src="" alt="" />
+            <span>개인정보 수집/이용 동의</span>
+          </label>
+          <span>(선택)</span>
+        </div>
+        <a href="#">약관보기></a>
+      </div>
+      <div>
+        <div>
+            <label for="">
+                <input
+                  class=""
+                  type="checkbox"
+                  name="requ-Termsall-4"
+                  id="requ-Termsall-4"
+                />
+                <img src="" alt="" />
+                <span>무료배송, 할인쿠폰 등 혜택/정보 수신 동의</span>
+              </label>
+              <span>(선택)</span>
+        </div>
+        <div>
+            <label for="">
+                <input
+                  class=""
+                  type="checkbox"
+                  name="requ-Termsall-41"
+                  id="requ-Termsall-41"
+                />
+                <img src="" alt="" />
+                <span>SMS</span>
+              </label>
+              <label for="">
+                <input
+                  class=""
+                  type="checkbox"
+                  name="requ-Termsall-42"
+                  id="requ-Termsall-42"
+                />
+                <img src="" alt="" />
+                <span>이메일</span>
+              </label>
+        </div>
+        <div>
+            <p id="use_p2">
+                동의 시 한 달간 [5%적립] + [2만원 이상 무료배송] 첫 주문
+                후 안내
+            </p>
+        </div>
+      </div>
+      <div>
+        <label for="">
+            <input
+              class=""
+              type="checkbox"
+              name="requ-Termsall-5"
+              id="requ-Termsall-5"
+            />
+            <img src="" alt="" />
+            <span>본인은 만 14세 이상입니다.</span>
+          </label>
+          <span>(필수)</span>
+      </div>
+    </div>
+  </div>
+</div> */
