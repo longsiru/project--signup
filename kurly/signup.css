@@ -171,6 +171,7 @@ button {
         <label class="halfpart-use-agree" for="terms">이용약관동의</label
         ><span class="stars">*</span>
     </div>
+
     <div class="halfpart-use-terms">
       <div class="use-terms-detai">
         <label for="">
@@ -210,7 +211,7 @@ button {
               class=""
               type="checkbox"
               name="requ-Termsall-3"
-              id="requ-Termsall_2"
+              id="requ-Termsall_3"
             />
             <img src="" alt="" />
             <span>개인정보 수집/이용 동의</span>
@@ -234,6 +235,7 @@ button {
         </div>
         <a href="#">약관보기></a>
       </div>
+
       <div>
         <div>
             <label for="">
