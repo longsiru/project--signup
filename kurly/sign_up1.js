@@ -16,6 +16,10 @@ submitButton.addEventListener("click", function (e) {
     fullnameConfirm(),
     emailConfirm(),
     telConfirm(),
+    selectConfirm(),
+    submitBtnConfirm(),
+    selectAConfirm(),
+    selectBConfirm(),
   ];
 
   for (const chk of chkArray) {
@@ -143,6 +147,11 @@ function telConfirm() {
 }
 
 function idCheck(id) {
+  if (id.length < 6) {
+    return false;
+  } else if (id.length > 17) {
+    return false;
+  }
   return true;
 }
 
@@ -162,12 +171,92 @@ function emailCheck(email) {
   return reg.test(email);
 }
 
-/* function idConfirm() {
-  var useridText = userid.value;
-  var re = /^(?=.*[a-z])(?=.*\d)[^]{6,16}$/;
-  var result = re.test(useridText);
-  if (!result) {
-    overlap.style.display = "block";
+// 전체동의 checkbox
+const allSelect = document.querySelector(".all_select input");
+const itemsSelect = document.querySelectorAll(".items_select input");
+
+allSelect.addEventListener("click", function () {
+  const type = allSelect.checked;
+  console.log(type);
+
+  itemsSelect.forEach(function (items) {
+    items.checked = type;
+  });
+});
+
+itemsSelect.forEach(function (items) {
+  items.addEventListener("click", function () {
+    const flag = true;
+    //  switch 설정
+    itemsSelect.forEach(function (items) {
+      if (items.checked === false)
+        //  input select 상태 판단.
+        return (flag = false);
+    });
+    return (allSelect.checked = flag);
+  });
+});
+
+const termsAppoint = document.querySelector(".items_select  a");
+termsAppoint.addEventListener("click", () => {
+  alert("이용약관(필수)");
+});
+
+const Select = document.querySelector("#requ_Termsall_1");
+function selectConfirm() {
+  const mustselectMust = document.querySelector(".must_sele");
+  // console.log("here111", mustelectMust);
+  mustselectMust.style.display = "none";
+  // console.log("here", mustelectMust.checked);
+  if (!mustselectMust.checked) {
+    mustselectMust.style.display = "block";
     return false;
   }
-} */
+  return true;
+}
+
+//주소
+function getPost() {
+  new daum.Postcode({
+    oncomplete: function (data) {
+      console.log(data);
+    },
+  }).open();
+}
+
+//주소 필수
+const submitBtn = document.querySelector("#address_button");
+function submitBtnConfirm() {
+  const mustAdre = document.querySelector(".must_adre");
+  mustAdre.style.display = "none";
+  if (!address_button.checked) {
+    mustAdre.style.display = "block";
+    return false;
+  }
+}
+
+const SelectA = document.querySelector("#requ_Termsall_2");
+function selectAConfirm() {
+  const mustAselectMust = document.querySelector(".must_selea");
+  // console.log("here111", mustAselectMust);
+  mustAselectMust.style.display = "none";
+  // console.log("here", mustAselectMust.style.display);
+  if (!mustAselectMust.checked) {
+    mustAselectMust.style.display = "block";
+    return false;
+  }
+  return true;
+}
+
+const SelectB = document.querySelector("#requ_Termsall_5");
+function selectBConfirm() {
+  const mustBselectMust = document.querySelector(".must_seleb");
+  // console.log("here111", mustAselectMust);
+  mustBselectMust.style.display = "none";
+  // console.log("here", mustAselectMust.style.display);
+  if (!mustBselectMust.checked) {
+    mustBselectMust.style.display = "block";
+    return false;
+  }
+  return true;
+}
