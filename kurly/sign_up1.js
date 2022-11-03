@@ -202,6 +202,44 @@ termsAppoint.addEventListener("click", () => {
   alert("이용약관(필수)");
 });
 
+//주소
+function getPost() {
+  new daum.Postcode({
+    oncomplete: function (data) {
+      console.log(data);
+      // const contentBnt = document.querySelector(".list_content_bnt");
+      const mustZip = document.querySelector(".must_zip_no");
+      const mustPres = document.querySelector(".must_pres_adre");
+      mustZip.style.display = "block";
+      mustPres.style.display = "block";
+      // contentBnt.style.display = "none";
+      jusoInput(data.zonecode, data.address);
+    },
+  }).open();
+}
+
+function jusoInput(zonecode, address) {
+  document.querySelector(".must_zip_no").value = zonecode;
+  document.querySelector(".must_pres_adre").value = address;
+  /* if (addrDetail.length > 30) {
+    alert("상세주소가 너무 길어 다시 입력해야 합니다.");
+    return;
+  }
+  document.querySelector(".must_detai_adre").value = addrDetail; */
+}
+
+//주소 필수
+const submitBtn = document.querySelector("#address_button");
+function submitBtnConfirm() {
+  const mustAdre = document.querySelector(".must_adre");
+  mustAdre.style.display = "none";
+  if (address_button.onclick) {
+    mustAdre.style.display = "block";
+    return false;
+  }
+  return true;
+}
+
 const Select = document.querySelector("#requ_Termsall_1");
 function selectConfirm() {
   const mustselectMust = document.querySelector(".must_sele");
@@ -213,26 +251,6 @@ function selectConfirm() {
     return false;
   }
   return true;
-}
-
-//주소
-function getPost() {
-  new daum.Postcode({
-    oncomplete: function (data) {
-      console.log(data);
-    },
-  }).open();
-}
-
-//주소 필수
-const submitBtn = document.querySelector("#address_button");
-function submitBtnConfirm() {
-  const mustAdre = document.querySelector(".must_adre");
-  mustAdre.style.display = "none";
-  if (!address_button.checked) {
-    mustAdre.style.display = "block";
-    return false;
-  }
 }
 
 const SelectA = document.querySelector("#requ_Termsall_2");

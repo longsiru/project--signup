@@ -148,7 +148,7 @@ li {
 
 .content_bnt_spa {
   display: block;
-  margin-top: 10px;
+  margin-top: 0px;
   line-height: 18px;
   font-size: 12px;
   color: gray;
@@ -325,4 +325,12 @@ footer {
   display: none;
   color: red;
   padding-left: 0px;
+}
+.must_zip_no {
+  margin-top: 6px;
+}
+
+.must_pres_adre {
+  margin-top: 6px;
+  width: 200px;
 }
